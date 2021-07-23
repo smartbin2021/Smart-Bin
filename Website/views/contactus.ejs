@@ -1,0 +1,66 @@
+<% layout('layouts/boilerplate')%>
+<h1 class="display-6 text-center mb-5 font-weight-bold">Contact Us</h1>
+<div class="container d-flex justify-content-center align-items-center"> 
+    <form action="send" method="POST" class="validated-form row g-3"novalidate>
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="inputFirst" class="form-label">First Name</label>
+                <input type="text" name="inputFirst" class="form-control" id="inputFirst" autofocus required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                </div>
+                <div class="col-md-6">
+                <label for="inputLast" class="form-label">Last Name</label>
+                <input type="text" name="inputLast" class="form-control" id="inputLast" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                </div>
+        </div>
+    
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="inputPhone" class="form-label">Phone Number</label>
+                <input type="number" name="inputPhone" class="form-control" id="inputPhone" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" name="inputEmail" class="form-control" id="inputEmail" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mb-4">
+            <div class="col-12">
+                <label for="inputSubject" class="form-label">Subject</label>
+                <input type="text" name="inputSubject" class="form-control" id="inputSubject" placeholder="Subject" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>      
+    
+        <div class="row mb-2">
+            <div class="col-12">
+                <textarea class="form-control" name="inputComment" id="inputComment" cols="150" rows="12" placeholder="Comment" required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+          
+        
+        </div>
+        <div class="d-flex justify-content-center mb-3">
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+      </form>
+      
+</div>
+

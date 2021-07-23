@@ -1,0 +1,11 @@
+<% layout('layouts/boilerplate')%> 
+<div class="container">
+    <h1 class="display-6 d-flex justify-content-center mb-5 font-weight-bold"><%= loc %> </h1>
+    <div class="row">
+        <% for(let i in fileListN){ %>
+            <div class="col-lg-4 mb-4">
+                <img class="img-thumbnail" src="https://drive.google.com/uc?export=view&id=<%= fileListN[i].id %> " alt="">
+            </div>
+            <% } %> 
+    </div>
+</div>
